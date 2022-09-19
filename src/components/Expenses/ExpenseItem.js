@@ -1,5 +1,5 @@
-import Card from "../Card/Card";
-import ExpenseDate from "../ExpenseDate/ExpenseDate";
+import Card from "../UI/Card";
+import ExpenseDate from "./ExpenseDate";
 
 import "./ExpenseItem.css";
 
