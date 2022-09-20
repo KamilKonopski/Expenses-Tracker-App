@@ -1,8 +1,8 @@
 import "./ExpensesFilter.css";
 
-const ExpensesFilter = ({ onChageFilter, selected }) => {
+const ExpensesFilter = ({ onChangeFilter, selected }) => {
 	const filterChangeHandler = (event) => {
-		onChageFilter(event.target.value);
+		onChangeFilter(event.target.value);
 	};
 
 	return (
