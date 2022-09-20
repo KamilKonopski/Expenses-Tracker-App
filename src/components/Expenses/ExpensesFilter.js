@@ -1,6 +1,6 @@
 import "./ExpensesFilter.css";
 
-const ExpensesFilter = ({ onChageFilter }) => {
+const ExpensesFilter = ({ onChageFilter, selected }) => {
 	const filterChangeHandler = (event) => {
 		onChageFilter(event.target.value);
 	};
@@ -9,7 +9,7 @@ const ExpensesFilter = ({ onChageFilter }) => {
 		<div className="expenses-filter">
 			<div className="expenses-filter__control">
 				<label>Filter by year</label>
-				<select onChange={filterChangeHandler}>
+				<select value={selected} onChange={filterChangeHandler}>
 					<option value="2022">2022</option>
 					<option value="2021">2021</option>
 					<option value="2020">2020</option>
