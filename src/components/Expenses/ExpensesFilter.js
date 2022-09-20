@@ -1,6 +1,6 @@
-import "./ExpenseFilter.css";
+import "./ExpensesFilter.css";
 
-const ExpenseFilter = () => {
+const ExpensesFilter = () => {
 	const filterChangeHandler = (event) => {};
 
 	return (
@@ -18,4 +18,4 @@ const ExpenseFilter = () => {
 	);
 };
 
-export default ExpenseFilter;
+export default ExpensesFilter;
