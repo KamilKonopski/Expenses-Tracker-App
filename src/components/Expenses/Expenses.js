@@ -20,16 +20,14 @@ const Expenses = ({ expenses }) => {
 					selected={filteredYear}
 					onChageFilter={filteredChangeHadler}
 				/>
-				{expenses.map((expense) => {
-					return (
-						<ExpenseItem
-							key={expense.id}
-							title={expense.title}
-							amount={expense.amount}
-							date={expense.date}
-						/>
-					);
-				})}
+				{expenses.map((expense) => (
+					<ExpenseItem
+						key={expense.id}
+						title={expense.title}
+						amount={expense.amount}
+						date={expense.date}
+					/>
+				))}
 			</Card>
 		</div>
 	);
