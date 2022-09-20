@@ -1,7 +1,9 @@
 import "./ExpensesFilter.css";
 
-const ExpensesFilter = () => {
-	const filterChangeHandler = (event) => {};
+const ExpensesFilter = ({ onChageFilter }) => {
+	const filterChangeHandler = (event) => {
+		onChageFilter(event.target.value);
+	};
 
 	return (
 		<div className="expenses-filter">
