@@ -1,6 +1,6 @@
 Expenses Tracker App.
 
-Link: https://grand-pothos-68050d.netlify.app/
+Page link: https://expenses-trackerkk.netlify.app/
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
