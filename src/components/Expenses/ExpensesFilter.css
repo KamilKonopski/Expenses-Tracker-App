@@ -4,11 +4,11 @@
 }
 
 .expenses-filter__control {
-    display: flex;
-    width: 100%;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     margin: 1rem 0;
+    width: 100%;
 }
 
 .expenses-filter label {
@@ -17,8 +17,8 @@
 }
 
 .expenses-filter select {
-    font: inherit;
-    padding: 0.5rem 3rem;
-    font-weight: bold;
     border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    padding: 0.5rem 3rem;
 }
