@@ -1,6 +1,6 @@
 import "./ChartBar.css";
 
-const ChartBar = ({ value, maxValue, label }) => {
+function ChartBar({ value, maxValue, label }) {
 	let barFillHeight = "0%";
 
 	if (maxValue > 0) {
