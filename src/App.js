@@ -3,7 +3,7 @@ import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-const App = () => {
+function App() {
 	const [expenses, setExpenses] = useState([
 		{
 			id: "el1",
