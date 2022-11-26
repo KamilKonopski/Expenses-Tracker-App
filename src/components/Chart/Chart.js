@@ -2,7 +2,7 @@ import ChartBar from "./ChartBar";
 
 import "./Chart.css";
 
-const Chart = ({ dataPoints }) => {
+function Chart({ dataPoints }) {
 	const dataPointValues = dataPoints.map((dataPoint) => dataPoint.value);
 	const totalMaximum = Math.max(...dataPointValues);
 
