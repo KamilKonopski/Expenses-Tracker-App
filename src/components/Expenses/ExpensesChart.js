@@ -1,6 +1,6 @@
 import Chart from "../Chart/Chart";
 
-const ExpensesChart = ({ expenses }) => {
+function ExpensesChart({ expenses }) {
 	const chartDataPoints = [
 		{ label: "Jan", value: 0 },
 		{ label: "Feb", value: 0 },
