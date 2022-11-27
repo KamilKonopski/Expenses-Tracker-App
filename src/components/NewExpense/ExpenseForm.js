@@ -2,24 +2,24 @@ import { useState } from "react";
 
 import "./ExpenseForm.css";
 
-const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
+function ExpenseForm({ onSaveExpenseData, onCancel }) {
 	const [title, setTitle] = useState("");
 	const [amount, setAmount] = useState("");
 	const [date, setDate] = useState("");
 
-	const titleChangeHandler = (event) => {
+	function titleChangeHandler(event) {
 		setTitle(event.target.value);
 	};
 
-	const amountChangeHandler = (event) => {
+	function amountChangeHandler(event) {
 		setAmount(event.target.value);
 	};
 
-	const dateChangeHandler = (event) => {
+	function dateChangeHandler(event) {
 		setDate(event.target.value);
 	};
 
-	const submitHandler = (event) => {
+	function submitHandler(event) {
 		event.preventDefault();
 
 		const expenseData = {
