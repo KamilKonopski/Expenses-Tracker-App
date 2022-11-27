@@ -10,7 +10,7 @@ import "./Expenses.css";
 function Expenses({ expenses }) {
 	const [filteredYear, setFilteredYear] = useState("2022");
 
-	const filteredChangeHadler = (selectedYear) => {
+	function filteredChangeHadler(selectedYear) {
 		setFilteredYear(selectedYear);
 	};
 
