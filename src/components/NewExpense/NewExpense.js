@@ -4,10 +4,10 @@ import ExpenseForm from "./ExpenseForm";
 
 import "./NewExpense.css";
 
-const NewExpense = ({ onAddExpense }) => {
+function NewExpense({ onAddExpense }) {
 	const [isEditing, setIsEditing] = useState(false);
 
-	const saveExpenseDataHandler = (enteredExpenseData) => {
+	function saveExpenseDataHandler(enteredExpenseData) {
 		const expenseData = {
 			...enteredExpenseData,
 			id: Math.random().toString(),
@@ -16,11 +16,11 @@ const NewExpense = ({ onAddExpense }) => {
 		setIsEditing(false);
 	};
 
-	const startEditingHandler = () => {
+	function startEditingHandler() {
 		setIsEditing(true);
 	};
 
-	const stopEditingHandler = () => {
+	function stopEditingHandler() {
 		setIsEditing(false);
 	};
 
