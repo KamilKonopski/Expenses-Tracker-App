@@ -1,6 +1,6 @@
-import "./ExpensesList.css";
-
 import ExpenseItem from "./ExpenseItem";
+
+import "./ExpensesList.css";
 
 function ExpensesList({ filteredExpenses }) {
 	if (filteredExpenses.length === 0) {
