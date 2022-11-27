@@ -1,7 +1,7 @@
 import "./ExpensesFilter.css";
 
 function ExpensesFilter({ onChangeFilter, selected }) {
-	const filterChangeHandler = (event) => {
+	function filterChangeHandler(event) {
 		onChangeFilter(event.target.value);
 	};
 
