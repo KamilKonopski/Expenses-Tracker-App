@@ -1,6 +1,6 @@
 import "./ExpensesFilter.css";
 
-const ExpensesFilter = ({ onChangeFilter, selected }) => {
+function ExpensesFilter({ onChangeFilter, selected }) {
 	const filterChangeHandler = (event) => {
 		onChangeFilter(event.target.value);
 	};
